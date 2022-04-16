@@ -555,7 +555,7 @@ def officeZip =holder.getNodeValue('//*:Office/*:Zip')
 assert homeZip!=officeZip</scriptText></con:configuration></con:assertion><con:assertion type="Sensitive Information Exposure" id="da466155-0ce0-446b-9f60-44aeaadefcfc" name="Sensitive Information Exposure"><con:configuration><AssertionSpecificExposureList>gdsf###fgfdf</AssertionSpecificExposureList><AssertionSpecificExposureList>password### Sensitive info</AssertionSpecificExposureList><IncludeProjectSpecific>true</IncludeProjectSpecific><IncludeGlobal>true</IncludeGlobal></con:configuration></con:assertion><con:assertion type="XQuery Match" id="3eedebc6-888e-4a0c-a5ce-12db9d5b795b" name="XQuery Match"><con:configuration><path>declare namespace SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace s='http://www.w3.org/2001/XMLSchema';
 declare namespace ns1='http://tempuri.org';
-&lt;list>
+
 {
 for $x in //*:FindPersonResult/*
 where $x //*:State[contains(text(), "NY")]
